@@ -74,4 +74,3 @@ Scroller.prototype = {
 var scroller = new Scroller();  
 scroller.init();
 
-
