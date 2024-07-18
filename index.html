@@ -1,211 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- This is the head of the biography website-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>ElSabio Cigars</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
-    <!--FONT AWESOME-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!--GOOGLE FONTS-->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
-    <title>ELSABIO CIGARS</title>
-    
-<script src="history.js"></script>
-
-
 </head>
-
-<!-- Body of the main page-->
 <body>
-<!--Menu content-->
+    <body>
+        <!-- Header -->
+        <header class="flex-container">
+      <img src="images/Elsabio-Logos-removebg-preview.png" width="100" height="300">
+          <nav>
+            <span><a href="#mission">Mission</a></span>
+            <span><a href="#store">Portafolio</a></span>
+            <span><a href="#locations">Events </a></span>
+          </nav>
+      </header> 
+        
+        
+        <div class="main">
+      
+          <!-- Mission Section -->
+      
+          <div id="mission" class="flex-container">
+            <div class="content">
+              <h2>Our Mission</h2>
+              <h4>Handcraft the best cigars for every ocasions</h4>
+            </div>
+          </div>
+      
+          <!-- Store Section -->
+      
+          <div id="store">
+            <h2>Our Cigars Portafolio</h2>
+            <div class="flex-container items">
+              <div class="item">
+                <img src="images/Garmendia-removebg-preview.png">
+                <span>ElSabio Garmendia</span>
+              </div>
+              <div class="item">
+                <img src="images/minuteman-removebg-preview.png">
+                <span>The Minuteman</span>
+              </div>
+              <div class="item">
+                <img src="images/Omerta.png">
+                <span>The Omerta</span>
+              </div>
+              <div class="item">
+                <img src="images/pigtail.png">
+                <span>The Pig Tail</span>
+              </div>
+              <div class="item">
+                <img src="images/minutemen.png">
+                <span>The Minuteman</span>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Locations Section -->
+      
+          <div id="locations">
+            <h2>Locations</h2>
+            <div class="flex-container locations">
+              <div class="location">
+                <h3>Downtown</h3>
+                <p>384 West 4th St</p>
+                <p>Suite 108</p>
+                <p>Portland, Maine</p>
+              </div>
+              <div class="location">
+                <h3>East Bayside</h3>
+                <p>3433 Phisherman's Avenue</p>
+                <p>(Northwest Corner)</p>
+                <p>Portland, Maine</p>
+              </div>
+              <div class="location">
+                <h3>Oakdale</h3>
+                <p>515 Crescent Avenue</p>
+                <p>Second Floor</p>
+                <p>Portland, Maine</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      <!-- Footer 
+      <footer class="site-footer">
+        I'm the Sticky Footer.
+      </footer>
+-->
 
-<header>
-    <div class="content">
-      <hgroup>
-        <h1>ELSABIO</h1>
-        <i>Cigars</i>
-      </hgroup>
+      <div class="skewed-bg">
+        <div class="content">
+            <h1 class="title">Creating joy and memory with quality cigars</h1>
+         <p class="text">Our product are hand crafted and made with the best premium tabacco selecte</p>
+        </div>
     </div>
-    <div class="overlay"></div>
-  </header>
-  
-  <section class="site">
-    <nav>
-      <a href="cigars.html">CIGARS</a>
-      <a href="">BUY CIGARS</a>
-    </nav>
-  
-     <!--
-   <img src="images/IMG_3320.JPG" align="left"   width="250" height="300" >  <blockquote>"We simly put the best premium tabacco into the finest cigars, so our customer can enjoy a beyond amazing experience."
-  ― David Sanchez
-  President/CEO Elsabio cigar company
-    </blockquote>
-   -->
-    <section>
-    <svg display="none">
-      <symbol id="arrow">
-        <polyline points="7 10,12 15,17 10" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-      </symbol>
-    </svg>
-    <h1>A Brief History of ELSABIO</h1>
-    <div id="timeline" class="timeline">
-      <div class="btn-group">
-        <button class="btn" type="button" data-action="expand">Expand All</button>
-        <button class="btn" type="button" data-action="collapse">Collapse All</button>
-      </div>
-      <div class="timeline__item">
-        <div class="timeline__item-header">
-          <button class="timeline__arrow" type="button" id="item1" aria-labelledby="item1-name" aria-expanded="false" aria-controls="item1-ctrld" aria-haspopup="true" data-item="1">
-            <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-              <use href="#arrow" />
-            </svg>
-          </button>
-          <span class="timeline__dot"></span>
-          <span id="item1-name" class="timeline__meta">
-            <time class="timeline__date" datetime="1970-01-01">September 21, 2021</time><br>
-            <strong class="timeline__title">Humble Beggining</strong>
-          </span>
-        </div>
-        <div class="timeline__item-body" id="item1-ctrld" role="region" aria-labelledby="item1" aria-hidden="true">
-          <div class="timeline__item-body-content">
-            <p class="timeline__item-p">This is the day I flew to the DR and meet Master blender Candido Rosario clock began (or <time datetime="2021-21-9">December 31, 1969</time> if you live behind UTC 😉).</p>
-          </div>
-        </div>
-      </div>
-      <div class="timeline__item">
-        <div class="timeline__item-header">
-          <button class="timeline__arrow" type="button" id="item2" aria-labelledby="item2-name" aria-expanded="false" aria-controls="item2-ctrld" aria-haspopup="true" data-item="2">
-            <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-              <use href="#arrow" />
-            </svg>
-          </button>
-          <span class="timeline__dot"></span>
-          <span id="item2-name" class="timeline__meta">
-            <time class="timeline__date" datetime="1973-10-17">February 17, 2022</time><br>
-            <strong class="timeline__title">Launched my first blend (Canaveral)</strong>
-          </span>
-        </div>
-        <div class="timeline__item-body" id="item2-ctrld" role="region" aria-labelledby="item2" aria-hidden="true">
-          <div class="timeline__item-body-content">
-            <p class="timeline__item-p"> Launched First cigars into the USA Market for the first time.</p>
-          </div>
-        </div>
-      </div>
-      <div class="timeline__item">
-        <div class="timeline__item-header">
-          <button class="timeline__arrow" type="button" id="item3" aria-labelledby="item3-name" aria-expanded="false" aria-controls="item3-ctrld" aria-haspopup="true" data-item="3">
-            <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-              <use href="#arrow" />
-            </svg>
-          </button>
-          <span class="timeline__dot"></span>
-          <span id="item3-name" class="timeline__meta">
-            <time class="timeline__date" datetime="2001-09-09">December  9, 2022 ELSABIO THE FIRST </time><br>
-            <strong class="timeline__title">Launched 2nd blend in Nicaragua with Garmendia Cigar Factory </strong>
-          </span>
-        </div>
-        <div class="timeline__item-body" id="item3-ctrld" role="region" aria-labelledby="item3" aria-hidden="true">
-          <div class="timeline__item-body-content">
-            <p class="timeline__item-p">Sold my first 5k Cigars and received possitive feedback about the blends.</p>
-          </div>
-        </div>
-      </div>
-      <div class="timeline__item">
-        <div class="timeline__item-header">
-          <button class="timeline__arrow" type="button" id="item4" aria-labelledby="item4-name" aria-expanded="false" aria-controls="item4-ctrld" aria-haspopup="true" data-item="4">
-            <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-              <use href="#arrow" />
-            </svg>
-          </button>
-          <span class="timeline__dot"></span>
-          <span id="item4-name" class="timeline__meta">
-            <time class="timeline__date" datetime="2009-02-13">February 13, 2023</time><br>
-            <strong class="timeline__title">Launched 3rd blend (Liga Mayor)</strong>
-          </span>
-        </div>
-        <div class="timeline__item-body" id="item4-ctrld" role="region" aria-labelledby="item4" aria-hidden="true">
-          <div class="timeline__item-body-content">
-            <p class="timeline__item-p"> Liga Mayor <a href="https://www.google.com/logos/unix1234567890.gif" target="_blank" rel="noopener">doodle</a> for it.</p>
-          </div>
-        </div>
-      </div>
-      <div class="timeline__item">
-        <div class="timeline__item-header">
-          <button class="timeline__arrow" type="button" id="item5" aria-labelledby="item5-name" aria-expanded="false" aria-controls="item5-ctrld" aria-haspopup="true" data-item="5">
-            <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-              <use href="#arrow" />
-            </svg>
-          </button>
-          <span class="timeline__dot"></span>
-          <span id="item5-name" class="timeline__meta">
-            <time class="timeline__date" datetime="2033-05-18">May 18, 2023</time><br>
-            <strong class="timeline__title">Launched ELSABIO THE PIG TAIL</strong>
-          </span>
-        </div>
-        <div class="timeline__item-body" id="item5-ctrld" role="region" aria-labelledby="item5" aria-hidden="true">
-          <div class="timeline__item-body-content">
-            <p class="timeline__item-p"> PIG TAIL.</p>
-          </div>
-        </div>
-      </div>
-      <div class="timeline__item">
-        <div class="timeline__item-header">
-          <button class="timeline__arrow" type="button" id="item6" aria-labelledby="item6-name" aria-expanded="false" aria-controls="item6-ctrld" aria-haspopup="true" data-item="6">
-            <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-              <use href="#arrow" />
-            </svg>
-          </button>
-          <span class="timeline__dot"></span>
-          <span id="item6-name" class="timeline__meta">
-            <time class="timeline__date" datetime="2038-01-19">December 19, 2023</time><br>
-            <strong class="timeline__title">Launched ELSABIO VIP</strong>
-          </span>
-        </div>
-        <div class="timeline__item-body" id="item6-ctrld" role="region" aria-labelledby="item6" aria-hidden="true">
-          <div class="timeline__item-body-content">
-            <p class="timeline__item-p"> We continue making history with our excellent and high quality blend.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-</section>    
-
-  </section>
+    
+    <footer class="footer">
+        <p class="credits">
+        Copyright ElSabio
+        <a class="link" href="https://twitter.com/pipozoft">@2024</a>
+      </p>
+    </footer>
 
 </body>
-
-
-<!-- Footer for the website--> >
-
-<footer>
-  <div class="footer">
-  <div class="row">
-  <a href="#"><i class="fa fa-facebook"></i></a>
-  <a href="#"><i class="fa fa-instagram"></i></a>
-  <a href="#"><i class="fa fa-youtube"></i></a>
-  <a href="#"><i class="fa fa-twitter"></i></a>
-  </div>
-  
-  <div class="row">
-  <ul>
-  <li><a href="#">Contact us</a></li>
-  <li><a href="#">Our Services</a></li>
-  <li><a href="#">Privacy Policy</a></li>
-  <li><a href="#">Terms & Conditions</a></li>
-  <li><a href="#">Career</a></li>
-  </ul>
-  </div>
-  
-  <div class="row">
-     Copyright © 2021 Cigars ELSABIO - All rights reserved || Designed By: David Sanchez
-  </div>
-  </div>
-  </footer>
-  
-
 </html>

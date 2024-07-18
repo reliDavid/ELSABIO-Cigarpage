@@ -1,76 +1,40 @@
-//Based on the Scroller function from @sallar
-var $content = $('header .content')
-  , $blur    = $('header .overlay')
-  , wHeight  = $(window).height();
+// Side Menu
+const sideNav = document.querySelector('.sidenav');
+M.Sidenav.init(sideNav, {});
 
-$(window).on('resize', function(){
-  wHeight = $(window).height();
-});
+// Slider
+const slider = document.querySelector('.slider');
+M.Slider.init(slider, {
+    indicators: false,
+    height: 500,
+    transition: 500,
+    interval: 6000
+  });
 
-window.requestAnimFrame = (function()
-{
-  return  window.requestAnimationFrame       ||
-          window.webkitRequestAnimationFrame ||
-          window.mozRequestAnimationFrame    ||
-          function( callback ){
-            window.setTimeout(callback, 1000 / 60);
-          };
-})();
+// Scrollspy
+const ss = document.querySelectorAll('.scrollspy');
+M.ScrollSpy.init(ss, {});
 
-function Scroller()
-{
-  this.latestKnownScrollY = 0;
-  this.ticking            = false;
-}
+// Material Boxed
+const mb = document.querySelectorAll('.materialboxed');
+M.Materialbox.init(mb, {});
 
-Scroller.prototype = {
- 
-  init: function() {
-    window.addEventListener('scroll', this.onScroll.bind(this), false);
-    $blur.css('background-image',$('header:first-of-type').css('background-image'));
-  },
-
-
-  onScroll: function() {
-    this.latestKnownScrollY = window.scrollY;
-    this.requestTick();
-  },
-
-  
-  requestTick: function() {
-    if( !this.ticking ) {
-      window.requestAnimFrame(this.update.bind(this));
+// Auto Complete
+const ac = document.querySelector('.autocomplete');
+M.Autocomplete.init(ac, {
+    data: {
+      "Aruba": null,
+      "Cancun Mexico": null,
+      "Hawaii": null,
+      "Florida": null,
+      "California": null,
+      "Jamaica": null,
+      "Europe": null,
+      "The Bahamas": null,
     }
-    this.ticking = true;
-  },
-
-  update: function() {
-    var currentScrollY = this.latestKnownScrollY;
-    this.ticking       = false;
-    
-    
-    var slowScroll = currentScrollY / 2
-      , blurScroll = currentScrollY * 2
-      , opaScroll = 1.4 - currentScrollY / 400;
-   if(currentScrollY > wHeight)
-     $('nav').css('position','fixed');
-   else
-     $('nav').css('position','absolute');
-    
-    $content.css({
-      'transform'         : 'translateY(' + slowScroll + 'px)',
-      '-moz-transform'    : 'translateY(' + slowScroll + 'px)',
-      '-webkit-transform' : 'translateY(' + slowScroll + 'px)',
-      'opacity' : opaScroll
-    });
-    
-    $blur.css({
-      'opacity' : blurScroll / wHeight
-    });
-  }
-};
+  });
 
 
-var scroller = new Scroller();  
-scroller.init();
-
+  $("#add").on("click", function() {
+    const newLocal = $("<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>").appendTo(".page-wrap");
+  });
